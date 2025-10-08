@@ -1,4 +1,4 @@
-from person import Person
+from .person import Person
 
 class Student(Person):
 
@@ -8,9 +8,6 @@ class Student(Person):
         self._semester = semester
 
     def __str__(self):
-        return f"Student's {super().__str__()} , Seat #: {self._seat_no} , Semester: {self._semester}"    
-    
-a=Student("asad", "087", 2)
-print(a)    
+        return f"Student's {super().__str__()} , Seat #: {self._seat_no} , Semester: {self._semester}" 
 
     
