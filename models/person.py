@@ -1,7 +1,7 @@
 class Person:
     def __init__(self, name:str):
-        self._name  = name
+        self.name  = name
 
     def __str__(self):
-        return f"Name: {self._name}"
+        return f"Name: {self.name}"
         
