@@ -34,12 +34,12 @@ class CourseList:
         found_course = [ course for course in self._courses if course.course_title == key ]
 
         if found_course:
-            print (f"\nFound results based on title {key}: {len (found_course)}\n\n")
+            print (f"\nFound results based on title {key}: {len (found_course)} ")
             for i in found_course:
-                print (i)
+                print ("\t",i)
 
         else:
-            print (f"\nNo courses found with the same name:'{key}'\n")
+            print (f"\tNo courses found with the same name:'{key}'")
 
     def __str__ ( self ):
 

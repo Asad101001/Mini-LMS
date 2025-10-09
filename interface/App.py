@@ -5,30 +5,16 @@ class App:
         self.studentlist = StudentList ()
         self._courselist = CourseList ()
 
-
-      # a = Student("Asad", "87", 2)
-      # print(a)
-      # print(a.seat_no)
-      # a.seat_no= "5"
-      # print(a.seat_no)
-      # a.semester = 69
-      # print(a.semester)
-      #
-      #
-      # c= Course("Dr. Humera Tariq", "007", "CS-352", "OOPs")
-      # print(c)
-
-
     def run (self):
-        Humera = Teacher ("Mis Humera","007")
-        Bari = Teacher ("Sir Bari", "001")
-        Mariam = Teacher ("Mis Mariam", "054")
-        Huzaifa = Teacher ("Sir Huzaifa", "111")
+        MisssHumera = Teacher ("Miss MsHumera", "007")
+        SirBari = Teacher ("Sir Bari", "001")
+        MissMariam = Teacher ("Miss Mariam", "054")
+        SirHuzaifa = Teacher ("Sir Huzaifa", "111")
 
-        oop = Course ("Humera", "007","CS-352","Object Oriented Programming", )
-        dld = Course (" Bari","001","CS-354", "Digital Logic Design")
-        ds = Course ("Mariam","054","CS-358", "Discrete Structure")
-        la = Course ("Huzaifa","111","CS-356", "linear Algebra")
+        oop = Course ("CS-352","Object Oriented Programming", MisssHumera)
+        dld = Course ("CS-354", "Digital Logic Design", SirBari)
+        ds = Course ("CS-358", "Discrete Structure", MissMariam)
+        la = Course ("CS-356", "linear Algebra", SirHuzaifa)
 
         self._courselist.add_course (oop)
         self._courselist.add_course (dld)
@@ -55,7 +41,7 @@ class App:
 
     @property
     def show_all_students ( self ):
-        return f"{self.studentlist.get_students}"
+        return self.studentlist.get_students
 
     @property
     def show_all_courses ( self ):

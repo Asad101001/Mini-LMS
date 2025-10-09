@@ -1,8 +1,8 @@
 from interface.App import App
 
 def main():
-    app = App()
-    app.run()
+    LMS = App()
+    LMS.run()
 
 if __name__ == "__main__":
     main()

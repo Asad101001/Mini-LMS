@@ -29,9 +29,9 @@ class StudentList:
         found_students = [ student for student in self._students if student.name == key ]
 
         if found_students:
-            print (f"\nFound results based on: {key}: {len (found_students)} \n\n")
+            print (f"\nFound results based on: {key} = {len (found_students)} ")
             for student in found_students:
-                print (student)
+                print ("\t",student)
         else:
             print (f"\nNo student found with the name:'{key}'\n")
 
@@ -39,7 +39,7 @@ class StudentList:
         found_seat = [ student for student in self._students if student.seat_no == key ]
 
         if found_seat:
-            print (f"\nFound results based on seat number: {key}: {len (found_seat)} \n\n")
+            print (f"\nFound results based on seat number: {key} = {len (found_seat)} \n\n")
             for student in found_seat:
                 print (student)
         else:
@@ -49,7 +49,7 @@ class StudentList:
         found_semester = [ student for student in self._students if student.semester == key ]
 
         if found_semester:
-            print (f"\nFound results based on semester {key}: {len (found_semester)} \n\n")
+            print (f"\nFound results based on semester {key} = {len (found_semester)} \n\n")
             for student in found_semester:
                 print (student)
         else:
